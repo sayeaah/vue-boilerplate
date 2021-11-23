@@ -1,0 +1,19 @@
+.tab {
+  margin: 30px auto 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+    padding: 10px 25px;
+    border-bottom: 3px solid transparent;
+    color: rgb(139, 139, 139);
+
+    &.router-link-exact-active {
+      font-weight: bolder;
+      color: $dark-blue;
+      border-color: $dark-blue;
+      pointer-events: none;
+    }
+  }
+}

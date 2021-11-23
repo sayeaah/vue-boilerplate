@@ -1,0 +1,20 @@
+.form {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 15px;
+  }
+
+  &__input {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    height: 35px;
+    background-color: $white;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
