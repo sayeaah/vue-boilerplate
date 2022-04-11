@@ -1,5 +1,10 @@
 # vue-boilerplate
 
+## Prerequisites
+```
+npm install -g @vue/cli @vue/cli-service-global
+```
+
 ## Project setup
 ```
 npm install
