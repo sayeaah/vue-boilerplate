@@ -1,12 +1,11 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import { createStore } from 'vuex';
 
-Vue.use(Vuex)
-
-export default new Vuex.Store({
-  state: {
-    user: 'Juan Dela Cruz',
-    friends: []
+export default createStore({
+  state() {
+    return {
+      user: 'Juan Dela Cruz',
+      friends: []
+    }
   },
   mutations: {
     setFriend(state, value) {

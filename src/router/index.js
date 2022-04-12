@@ -1,8 +1,7 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-
-Vue.use(VueRouter)
+import { createWebHistory, createRouter } from "vue-router";
+import Home from '../views/Home.vue';
+import State from '../views/State.vue'
+import Axios from '../views/Axios.vue'
 
 const routes = [
   {
@@ -13,19 +12,18 @@ const routes = [
   {
     path: '/state',
     name: 'State',
-    component: () => import('../views/State.vue')
+    component: State
   },
   {
     path: '/axios',
     name: 'Axios',
-    component: () => import('../views/Axios.vue')
+    component: Axios
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
 
 export default router
